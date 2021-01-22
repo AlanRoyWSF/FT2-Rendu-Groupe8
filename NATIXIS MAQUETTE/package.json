@@ -1,0 +1,12 @@
+{
+  "name": "natixis-maquette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./script.js"
+  },
+  "author": "alan",
+  "license": "ISC"
+}

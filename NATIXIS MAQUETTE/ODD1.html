@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <label for="switch">&#9776;</label>
+      <input type="checkbox" id="switch">
+      <nav>
+        <ul>
+            <img src="Ressources/logo.png" class="logoheader">
+          <li>
+            <a class="lien_header" href="#Partie-0">Notre Modèle unique</a>
+            <a class="lien_header" href="#Partie-2">Nos expertises & Beyond</a>
+            <a class="lien_header" href="#Partie-3">Nos investisseurs et actionnaires</a>
+            <a class="lien_header" href="#Partie-4">Nos actualités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="espace">
+  
+    </div>
+
+    <div class="mini-header">
+
+      <a href="ODD1.html">  <img class="img_slide active" src="img/ODD1.png" alt="">  </a>
+      <img class="img_slide" src="img/ODD3.png" alt="">
+      <img class="img_slide" src="img/ODD4.png" alt="">
+      <a href="odd5.html"><img class="img_slide" src="img/ODD5.png" alt=""></a>
+      <a href="ODD7.html"><img class="img_slide" src="img/ODD7.png" alt=""></a>
+      <img class="img_slide" src="img/ODD8.png" alt="">
+      <a href="ODD11.html"><img class="img_slide" src="img/ODD11.png" alt=""></a>
+      <img class="img_slide" src="img/ODD13.png" alt="">
+      <img class="img_slide" src="img/ODD14.png" alt="">
+      <img class="img_slide" src="img/ODD15.png" alt="">
+      <img class="img_slide" src="img/ODD17.png" alt="">
+
+</div>
+
+
+
+
+<div class="Produit_ODD1">
+
+  <div id="placement">
+
+      <img id="img1" src="img/ODD1.png" alt="">
+
+  </div>
+
+  <div id="placement2">
+
+      <h2 id="t1"> Renforcer la résilience des personnes en situation vulnérable et réduire leur exposition aux phénomènes climatiques extrêmes et catastrophes d’ordre économique, social ou environnemental </h2>
+
+  </div>
+
+  <div class="placement3">
+     
+      <h2 id="t2">Les Objectifs de Développement Durable de Natixis en fonction des impacts directs (interne à l’entreprise) et indirects (financement</h2>
+
+  </div>
+
+</div>
+
+      <h2>Insertion et maintien dans l’emploi des collaborateurs en situation de handicap</h2>
+      <p>Natixis est engagée dans une politique active en faveur du
+        recrutement, de l’insertion et du maintien dans l’emploi des
+        personnes en situation de handicap. Portée par la mission handicap
+        et son réseau de référents dans les métiers, cette politique s’est
+        traduite par trois accords groupe, une collaboration renforcée avec
+        les managers et des résultats concrets.<br><br>
+        Inscrivant cette action dans la durée, Natixis s’est à nouveau
+        engagée dans le cadre d’un 4e accord Handicap pour une durée de
+        trois ans à dater du 1er janvier 2020.</p>
+      <img src="Ressources/odd1.png" class="fauteuil">
+      <h6 class="centrer">L’effectif de Natixis est composé de<br>487 personnes en situation de handicap</h6>
+      <h2>Programme de don sur salaire (avec MicroDON)</h2>
+      <p>Dans le cadre de sa démarche RSE, Natixis a lancé en décembre 2019, un dispositif de générosité simple, innovant et
+        participatif : le microdon sur salaire. En partenariat avec MicroDON,
+         le dispositif mis en place offre la possibilité à
+        tous les collaborateurs de Natixis en France de soutenir l’une des cinq associations sélectionnées, en versant un
+        microdon mensuel (de quelques centimes à quelques euros), prélevé directement sur le bulletin de salaire. Natixis
+        double les dons par un abondement à 100 %.</p>
+      <div class="microdon">
+          <div class="gauche">
+            <img src="Ressources/microdon.png">
+            <h6 class="h6">a récolté</h6>
+            <h5 class="h6">5000 €</h5>
+            <h6 class="h6">pour plusieurs associations</h6>
+          </div>
+          <img src="Ressources/carte.png" class="carte">
+
+
+        
+      </div>
+      </div>
+
+      <div class="trav">
+        <div class="container">
+           <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e302204d-e018-4e12-925d-7aad8dfbabbd/dpef_2019-vf.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210122%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210122T230550Z&X-Amz-Expires=86400&X-Amz-Signature=fa69b0bcbc9962bb549ca46fc5d7a11568e284aed672da1be097542c5bd52d61&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22dpef_2019-vf.pdf%22"><button class="btn">Accéder à la DPEF</button></a>
+         </div>
+       </div>
+
+      <script>
+
+let img_slides = document.getElementsByClassName("img_slide");
+img_slides.forEach( img_slide => {
+
+    img_slide.addEventListener('click',event =>{
+
+        if( document.getElementsByClassName("img_slide active")[0]){
+
+            document.getElementsByClassName("img_slide active")[0].classList.remove("active");
+
+        }
+
+       img_slide.classList.add("active");
+
+    },false);
+    
+});
+
+      </script>
+  </body>
+</html>

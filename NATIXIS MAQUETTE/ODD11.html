@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  
+  </head>
+  <body>
+
+    <header>
+      <label for="switch">&#9776;</label>
+      <input type="checkbox" id="switch">
+      <nav>
+        <ul>
+          <img src="Ressources/logo.png" class="logoheader">
+          <li>
+            <a class="lien_header" href="#Partie-0">Notre Modèle unique</a>
+            <a class="lien_header" href="#Partie-2">Nos expertises & Beyond</a>
+            <a class="lien_header" href="#Partie-3">Nos investisseurs et actionnaires</a>
+            <a class="lien_header" href="#Partie-4">Nos actualités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="espace">
+  
+    </div>
+
+    
+    <div class="mini-header">
+
+      <a href="ODD1.html">  <img class="img_slide" src="img/ODD1.png" alt="">  </a>
+       <img class="img_slide" src="img/ODD3.png" alt="">
+       <img class="img_slide" src="img/ODD4.png" alt="">
+       <a href="odd5.html"><img class="img_slide" src="img/ODD5.png" alt=""></a>
+       <a href="ODD7.html"><img class="img_slide" src="img/ODD7.png" alt=""></a>
+       <img class="img_slide" src="img/ODD8.png" alt="">
+       <a href="ODD11.html"><img class="img_slide active" src="img/ODD11.png" alt=""></a>
+       <img class="img_slide" src="img/ODD13.png" alt="">
+       <img class="img_slide" src="img/ODD14.png" alt="">
+       <img class="img_slide" src="img/ODD15.png" alt="">
+       <img class="img_slide" src="img/ODD17.png" alt="">
+
+</div>
+
+
+<div class="Produit_ODD11">
+
+  <div id="placement">
+
+      <img id="img1" src="img/ODD11.png" alt="">
+
+  </div>
+
+  <div id="placement2">
+
+      <h2 id="t1"> Faire en sorte que les villes soient ouvertes à tous, sûres, résilientes et durables. (Financements d’infrastructures durables : transports propres et bâtiments verts). </h2>
+
+  </div>
+
+  <div class="placement3">
+     
+      <h2 id="t2">Les Objectifs de Développement Durable de Natixis en fonction des impacts directs (interne à l’entreprise) et indirects (financement</h2>
+
+  </div>
+
+</div>
+
+<div class="placement_tab">
+
+<div class="tab">
+  <div  id="default_open" class="tablinks" onclick="openTab(event, 'Direct')">Impact Directs</div>
+  <div class="tablinks" onclick="openTab(event, 'Indirect')">Impact Indirects</div>
+</div>
+
+</div>
+
+<div id="Direct" class="tabcontent">
+
+
+    <h3>Évolution des déplacements professionnels (en km)</h3>
+    <img src="Ressources/graphe1.png">
+    <p class="centrer">Pour ce qui concerne les prestations de coursiers urgentes en région parisienne, pour<br>des distances inférieures à 3 km, la direction de l’Immobilier et de la Logistique<br>propose l’acheminement de plis par
+    un service de porteurs à vélo. </p>
+    
+    
+
+    <div class="prestation">
+      <img src="Ressources/territoire.png" class="graphe">
+      <h5 class="graphe">49%</h5>
+      <h4 class="graphe">des prestations de<br>coursiers faites à vélo</h4>
+
+    </div>
+    <div class="prestation">
+      <img src="Ressources/graphe2.png" class="graphe2">
+      <p class="graphe2">La livraison de courrier à vélo représente un total de 11 418 km parcourus en 2019 (contre 4 000 km en 2017).</p>
+    </div>
+     
+    <div id="chartdiv"></div>
+
+</div>
+
+<div id="Indirect" class="tabcontent">
+
+  <h3 class="h3bleu">ICAWOOD : premier financement vert du type Equity Bridge</h3>
+  <div class="odd11">
+    <img src="Ressources/immeuble.png">
+    <img src="Ressources/plante.png">
+  </div>
+  <p class="centrer">Cette transaction, en accord avec les Principes des Green Loans (Loan Market Association), a
+    pour objectif<br> de développer des projets immobiliers utilisant des technologies de construction bas carbone<br>dans la
+    Métropole du Grand Paris.</p>
+
+  <div id="chartdiv2"></div>
+
+</div>  
+
+<div class="trav">
+  <div class="container">
+    <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e302204d-e018-4e12-925d-7aad8dfbabbd/dpef_2019-vf.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210122%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210122T230550Z&X-Amz-Expires=86400&X-Amz-Signature=fa69b0bcbc9962bb549ca46fc5d7a11568e284aed672da1be097542c5bd52d61&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22dpef_2019-vf.pdf%22"><button class="btn">Accéder à la DPEF</button></a>
+   </div>
+ </div>
+
+</div>
+
+<script>
+  am4core.ready(function() {
+  
+  // Themes begin
+  am4core.useTheme(am4themes_material);
+  am4core.useTheme(am4themes_animated);
+  // Themes end
+  
+  // Create chart instance
+  var chart = am4core.create("chartdiv", am4charts.XYChart);
+  
+  // Add data
+  chart.data = [{
+    "age": "2018",
+    "male": 32,
+    "female": -14.3
+  }, {
+    "age": "2019",
+    "male": 22.5,
+    "female": -7.5
+  },];
+  
+  // Use only absolute numbers
+  chart.numberFormatter.numberFormat = "##.s";
+  
+  // Create axes
+  var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+  categoryAxis.dataFields.category = "age";
+  categoryAxis.renderer.grid.template.location = 0;
+  categoryAxis.renderer.inversed = true;
+  
+  var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+  valueAxis.extraMin = 0.1;
+  valueAxis.extraMax = 0.1;
+  valueAxis.renderer.minGridDistance = 40;
+  valueAxis.renderer.ticks.template.length = 5;
+  valueAxis.renderer.ticks.template.disabled = false;
+  valueAxis.renderer.ticks.template.strokeOpacity = 0.4;
+  valueAxis.renderer.labels.template.adapter.add("text", function(text) {
+    return text == "Male" || text == "Female" ? text : text + "";
+  })
+  
+  // Create series
+  var male = chart.series.push(new am4charts.ColumnSeries());
+  male.dataFields.valueX = "male";
+  male.dataFields.categoryY = "age";
+  male.clustered = false;
+  
+  var maleLabel = male.bullets.push(new am4charts.LabelBullet());
+  maleLabel.label.text = "";
+  maleLabel.label.hideOversized = false;
+  maleLabel.label.truncate = false;
+  maleLabel.label.horizontalCenter = "right";
+  maleLabel.label.dx = -10;
+  
+  var female = chart.series.push(new am4charts.ColumnSeries());
+  female.dataFields.valueX = "female";
+  female.dataFields.categoryY = "age";
+  female.clustered = false;
+  
+  var femaleLabel = female.bullets.push(new am4charts.LabelBullet());
+  femaleLabel.label.text = " ";
+  femaleLabel.label.hideOversized = false;
+  femaleLabel.label.truncate = false;
+  femaleLabel.label.horizontalCenter = "left";
+  femaleLabel.label.dx = 10;
+  
+  var maleRange = valueAxis.axisRanges.create();
+  maleRange.value = -10;
+  maleRange.endValue = 0;
+  maleRange.label.text = " ";
+  maleRange.label.fill = chart.colors.list[0];
+  maleRange.label.dy = 30;
+  maleRange.label.fontWeight = '600';
+  maleRange.grid.strokeOpacity = 1;
+  maleRange.grid.stroke = male.stroke;
+  
+  var femaleRange = valueAxis.axisRanges.create();
+  femaleRange.value = 0;
+  femaleRange.endValue = 30;
+  femaleRange.label.text = " ";
+  femaleRange.label.fill = chart.colors.list[1];
+  femaleRange.label.dy = 20;
+  femaleRange.label.fontWeight = '600';
+  femaleRange.grid.strokeOpacity = 1;
+  femaleRange.grid.stroke = female.stroke;
+  
+  }); // end am4core.ready()
+
+  am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    var chart = am4core.create("chartdiv2", am4charts.XYChart);
+    chart.padding(40, 40, 40, 40);
+    
+    var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.renderer.grid.template.location = 0;
+    categoryAxis.dataFields.category = "network";
+    categoryAxis.renderer.minGridDistance = 1;
+    categoryAxis.renderer.inversed = true;
+    categoryAxis.renderer.grid.template.disabled = true;
+    
+    var valueAxis = chart.xAxes.push(new am4charts.ValueAxis());
+    valueAxis.min = 0;
+    
+    var series = chart.series.push(new am4charts.ColumnSeries());
+    series.dataFields.categoryY = "network";
+    series.dataFields.valueX = "MAU";
+    series.tooltipText = "{valueX.value}"
+    series.columns.template.strokeOpacity = 0;
+    series.columns.template.column.cornerRadiusBottomRight = 5;
+    series.columns.template.column.cornerRadiusTopRight = 5;
+    
+    var labelBullet = series.bullets.push(new am4charts.LabelBullet())
+    labelBullet.label.horizontalCenter = "left";
+    labelBullet.label.dx = 10;
+    labelBullet.label.text = "";
+    labelBullet.locationX = 1;
+    
+    // as by default columns of the same series are of the same color, we add adapter which takes colors from chart.colors color set
+    series.columns.template.adapter.add("fill", function(fill, target){
+      return chart.colors.getIndex(target.dataItem.index);
+    });
+    
+    categoryAxis.sortBySeries = series;
+    chart.data = [
+        {
+          "network": "2017",
+          "MAU": 5000
+        },
+        {
+          "network": "2019",
+          "MAU": 10000
+        }
+      ]
+    
+    }); // end am4core.ready()
+
+
+  let img_slides = document.getElementsByClassName("img_slide");
+img_slides.forEach( img_slide => {
+
+    img_slide.addEventListener('click',event =>{
+
+        if( document.getElementsByClassName("img_slide active")[0]){
+
+            document.getElementsByClassName("img_slide active")[0].classList.remove("active");
+
+        }
+
+       img_slide.classList.add("active");
+
+    },false);
+    
+});
+
+
+
+
+document.getElementById("default_open").click();
+
+function openTab(evt, TabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(TabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+  </body>
+</html>
+
+  
+ 
+
+  
+
+ 
+
+  
